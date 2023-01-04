@@ -43,7 +43,7 @@ def twoNumberSum(array,targetSum):
             nums[num]=True
     return []
         
-# O(n) time | O(n) space
+# O(nlog(n)) time | O(1) space
 def twoNumberSum(array,targetSum):
     array.sort()
     left = 0
@@ -56,6 +56,7 @@ def twoNumberSum(array,targetSum):
             left +=1
         elif currentSum > targetSum:
             right -=1
+    return []
 
 
 ```
